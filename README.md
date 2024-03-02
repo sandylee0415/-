@@ -6,7 +6,5 @@
 
 # 作業連結區
 
-作業一連結：
-https://youtu.be/J5PXe8fHHL4
-
+[作業一]([https://www.youtube.com/watch?v=JGyh-pOPkMo](https://youtu.be/J5PXe8fHHL4)https://youtu.be/J5PXe8fHHL4)
 # 專題連結區
