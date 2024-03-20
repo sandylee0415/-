@@ -1,1 +1,73 @@
+import json
+university_brand = {
+    "成大": 68.690,
+    "陽明交大": 68.612,
+    "台大": 68.175,
+    "清大": 67.660,
+    "台科大": 64.244,
+    "政大": 62.093,
+    "北科大": 60.782,
+    "中央": 54.982,
+    "淡江": 52.128,
+    "中興": 52.085,
+    "逢甲": 50.627,
+    "高科大": 49.272,
+    "東海": 48.721,
+    "東吳": 47.276,
+    "中原": 46.381,
+    "雲科大": 46.099,
+    "台師大": 45.950,
+    "中正": 44.899
+}
+university_location = {
+    "成大": ["南部"],
+    "陽明交大": ["北部"],
+    "台大": ["北部"],
+    "清大": ["北部"],
+    "台科大": ["北部"],
+    "政大": ["北部"],
+    "北科大": ["北部"],
+    "中央": ["北部"],
+    "淡江": ["北部"],
+    "中興": ["中部"],
+    "逢甲": ["中部"],
+    "高科大": ["南部"],
+    "東海": ["中部"],
+    "東吳": ["北部"],
+    "中原": ["北部"],
+    "雲科大": ["中部"],
+    "台師大": ["北部"],
+    "中正": ["南部"],
+}
+university_publicorprivate = {
+    "成大": ["國立"],
+    "陽明交大": ["國立"],
+    "台大": ["國立"],
+    "清大": ["國立"],
+    "台科大": ["國立科大"],
+    "政大": ["國立"],
+    "北科大": ["國立科大"],
+    "中央": ["國立"],
+    "淡江": ["私立"],
+    "中興": ["國立"],
+    "逢甲": ["私立"],
+    "高科大": ["國立科大"],
+    "東海": ["私立"],
+    "東吳": ["私立"],
+    "中原": ["國立"],
+    "雲科大": ["國立科大"],
+    "台師大": ["國立"],
+    "中正": ["國立"],
+}
+universities = {}
+for university in university_brand:
+    universities[university] = {
+        "brand": university_brand[university],
+        "location": university_location[university],
+        "public_or_private": university_publicorprivate[university]
+    }
+json_data = json.dumps(universities, indent=4, ensure_ascii=False)
+with open("universities.json", "w", encoding="utf-8") as json_file:
+    json_file.write(json_data)
 
+print("JSON 文件已生成！")
