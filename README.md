@@ -8,7 +8,6 @@
 [作業一影片](https://youtu.be/J5PXe8fHHL4)
 [作業一檔案](https://colab.research.google.com/drive/1BchYl6tIhHRfwNIxk1fz6QFd81m_tnSg?hl=zh-tw)
 
-[作業二提問](HW2_Questions.pdf)
 [作業二圖片](json_university.com.png)
 [作業二程式碼](HW2)
 
