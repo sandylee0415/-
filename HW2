@@ -71,3 +71,37 @@ with open("universities.json", "w", encoding="utf-8") as json_file:
     json_file.write(json_data)
 
 print("JSON 文件已生成！")
+
+
+# 問題1：在品牌力排名前五的大學當中，有幾所是位於北部的國立大學或國立科大？
+# 提取前五所大学的名称
+top_five_universities = list(university_brand.keys())[:5]
+
+# 计算位于北部的国立大学或國立科大的数量
+num_northern_public_universities = sum(1 for uni in top_five_universities if "北部" in university_location[uni] and ("國立" in university_publicorprivate[uni] or "國立科大" in university_publicorprivate[uni]))
+
+print("在品牌力排名前五的大学中，位于北部的国立大学或國立科大的数量为:", num_northern_public_universities)
+
+
+# 問題2：師大在全部的資料當中排名第幾呢？品牌力是多少？
+# 找到師大的品牌力排名
+rank = sorted(university_brand.items(), key=lambda x: x[1], reverse=True).index(("台師大", university_brand["台師大"])) + 1
+
+# 获取師大的品牌力值
+brand_power = university_brand["台師大"]
+
+print("師大在全部的資料當中排名第", rank, "，品牌力是", brand_power)
+
+
+# 問題3：全部的資料當中，有幾所是私立大學呢，分別是那些學校？
+# 初始化私立大学数量和名称列表
+num_private_universities = 0
+private_universities = []
+
+# 遍历大学名称和对应的公立/私立信息字典
+for university, ownership in university_publicorprivate.items():
+    if "私立" in ownership:
+        num_private_universities += 1
+        private_universities.append(university)
+
+print("全部的資料當中，有", num_private_universities, "所是私立大學，分別是:", private_universities)
