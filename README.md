@@ -11,6 +11,6 @@ HW1
 
 HW2
 [圖片](json_university.com.png)
-[程式碼](HW2)
+[程式碼](HW2_code)
 
 # 專題連結區
