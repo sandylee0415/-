@@ -11,6 +11,6 @@ HW1
 
 HW2
 [圖片](json_university.com.png)
-[檔案](HW2.ipynb)
+[檔案](HW2 (更新).ipynb)
 
 # 專題連結區
