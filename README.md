@@ -13,4 +13,8 @@ HW2
 [圖片](json_university.com.png)
 [檔案](https://github.com/sandylee0415/-/blob/main/HW2%20(%E6%9B%B4%E6%96%B0).ipynb)
 
+HW3
+[檔案](https://github.com/sandylee0415/-/blob/main/HW3.ipynb)
+[csv檔]([https://github.com/sandylee0415/-/blob/main/HW3.ipynb](https://github.com/sandylee0415/-/blob/main/output.csv))
+[json檔]([https://github.com/sandylee0415/-/blob/main/HW3.ipynb](https://github.com/sandylee0415/-/blob/main/output.json))
 # 專題連結區
