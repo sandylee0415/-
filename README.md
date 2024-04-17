@@ -17,4 +17,6 @@ HW3
 [檔案](https://github.com/sandylee0415/-/blob/main/HW3.ipynb)
 [json檔](output.json)
 [csv檔](output.csv)
+[影片](https://youtu.be/QX7yvbAlRog)
+
 # 專題連結區
